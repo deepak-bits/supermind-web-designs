@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://supermind.design/sitemap.xml
+Sitemap: https://supermindwebdesign.com/sitemap.xml

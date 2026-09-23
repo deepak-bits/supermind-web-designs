@@ -16,8 +16,8 @@
 	  "@context": "https://schema.org",
 	  "@type": "Service",
 	  "name": "{% if page.url == '/services/web-design/' %}Custom Web Design and Development{% elif page.url == '/services/seo/' %}Technical and Local SEO{% elif page.url == '/services/ecommerce/' %}Ecommerce Website Development{% else %}Mobile App Product Design{% endif %}",
-	  "provider": { "@id": "https://supermind.design/#organization" },
-	  "url": "https://supermind.design{{ page.url }}",
+	  "provider": { "@id": "https://supermindwebdesign.com/#organization" },
+	  "url": "https://supermindwebdesign.com{{ page.url }}",
 	  "areaServed": "India and international clients",
 	  "description": "{% if page.url == '/services/web-design/' %}Responsive, hand-coded websites built around a business, its audience, and its growth goals.{% elif page.url == '/services/seo/' %}Technical and local SEO foundations that help customers find and trust a business online.{% elif page.url == '/services/ecommerce/' %}Conversion-focused ecommerce websites with clear product journeys and strong SEO foundations.{% else %}Useful, accessible mobile product experiences shaped around real user needs and business goals.{% endif %}"
 	}
@@ -26,31 +26,33 @@
 	<title>{{ title }}</title>
 	<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 	{% if description %}<meta name="description" content="{{ description }}" />{% endif %}
-	<link rel="canonical" href="https://supermind.design{{ page.url }}" />
+	<link rel="canonical" href="https://supermindwebdesign.com{{ page.url }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="SuperMind Web Designs" />
 	<meta property="og:title" content="{{ title }}" />
 	<meta property="og:description" content="{{ description | default('SuperMind Web Designs creates fast, accessible, SEO-friendly websites and digital experiences for growing businesses.') }}" />
-	<meta property="og:url" content="https://supermind.design{{ page.url }}" />
+	<meta property="og:url" content="https://supermindwebdesign.com{{ page.url }}" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{{ title }}" />
+	<meta name="twitter:description" content="{{ description | default('SuperMind Web Designs creates fast, accessible, SEO-friendly websites and digital experiences for growing businesses.') }}" />
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
 	  "@graph": [
 	    {
 	      "@type": "Organization",
-	      "@id": "https://supermind.design/#organization",
+	      "@id": "https://supermindwebdesign.com/#organization",
 	      "name": "SuperMind Web Designs",
-	      "url": "https://supermind.design/",
+	      "url": "https://supermindwebdesign.com/",
 	      "email": "deepak.kumar3112@gmail.com",
 	      "description": "SuperMind Web Designs creates fast, accessible, hand-coded websites and digital experiences for growing businesses."
 	    },
 	    {
 	      "@type": "WebSite",
-	      "@id": "https://supermind.design/#website",
-	      "url": "https://supermind.design/",
+	      "@id": "https://supermindwebdesign.com/#website",
+	      "url": "https://supermindwebdesign.com/",
 	      "name": "SuperMind Web Designs",
-	      "publisher": { "@id": "https://supermind.design/#organization" }
+	      "publisher": { "@id": "https://supermindwebdesign.com/#organization" }
 	    }
 	  ]
 	}
