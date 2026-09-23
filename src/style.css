@@ -1081,7 +1081,7 @@ details[open] .faq-icon { transform: rotate(45deg); }
 }
 
 @media (max-width: 767px) {
-	.offer-author-card { left: .5rem; right: .5rem; width: auto; }
+	.offer-author-card { left: 1.5rem; right: 1.5rem; width: auto; }
 	.cta-section { padding-top: 7rem; }
 	.cta-card { border-radius: 1.15rem; padding: 2.75rem 1.1rem 0; }
 	.cta-inner { padding-bottom: 2.5rem; }
