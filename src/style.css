@@ -607,8 +607,8 @@ nav.scrolled {
 	.mac-screen { border-radius: .55rem; }
 	.mac-screen::after { border-radius: .55rem; }
 	.mac-base { height: 1.15rem; border-radius: 0 0 1.1rem 1.1rem; }
-	.iphone-body { border-radius: .65rem; }
-	.iphone-screen { border-radius: .45rem; }
+	.iphone-body { padding: .45rem .28rem; border-radius: .65rem; }
+	.iphone-screen { aspect-ratio: 9 / 16.5; border-radius: .45rem; }
 	.cs-wave { height: 220px; }
 }
 
