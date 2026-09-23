@@ -132,7 +132,10 @@ if (menuToggle && navLinks) {
 		const isOpen = navLinks.classList.toggle('is-open');
 		menuToggle.setAttribute('aria-expanded', String(isOpen));
 		menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-		if (!isOpen) navLinks.querySelectorAll('.nav-item.is-expanded').forEach(item => item.classList.remove('is-expanded'));
+		if (!isOpen) {
+			navLinks.querySelectorAll('.nav-item.is-expanded').forEach(item => item.classList.remove('is-expanded'));
+			navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => toggle.setAttribute('aria-expanded', 'false'));
+		}
 	});
 	navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
 		toggle.setAttribute('role', 'button');
@@ -141,8 +144,11 @@ if (menuToggle && navLinks) {
 		const toggleDropdown = () => {
 			const item = toggle.closest('.nav-item');
 			const isExpanded = item.classList.toggle('is-expanded');
-			navLinks.querySelectorAll('.nav-item.is-expanded').forEach(other => {
-				if (other !== item) other.classList.remove('is-expanded');
+			navLinks.querySelectorAll('.nav-item').forEach(other => {
+				if (other !== item) {
+					other.classList.remove('is-expanded');
+					other.querySelector('.nav-dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+				}
 			});
 			toggle.setAttribute('aria-expanded', String(isExpanded));
 		};
