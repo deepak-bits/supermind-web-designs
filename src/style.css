@@ -1503,6 +1503,12 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	.service-page-grid article { padding: 1.5rem; }
 }
 
+/* Final middle-breakpoint navbar inset; keep the outer navbar spacing unchanged. */
+@media (min-width: 1024px) and (max-width: 1399px) {
+	nav { padding-left: .75rem; padding-right: .75rem; }
+	nav.scrolled { padding-left: .75rem; padding-right: .75rem; }
+}
+
 @media (max-width: 1023px) {
 	.nav-links.is-open .nav-item:hover .nav-dropdown-menu { display: none; }
 	.nav-links.is-open .nav-item.is-expanded .nav-dropdown-menu { display: block; }
