@@ -1082,9 +1082,23 @@ details[open] .faq-icon { transform: rotate(45deg); }
 
 @media (max-width: 767px) {
 	.offer-author-card { left: 1.5rem; right: 1.5rem; width: auto; }
-	.offer-content > .nav-cta { display: block; width: fit-content; margin: 1rem auto 0; padding: 1rem 2rem; text-align: center; }
+	.offer-content > .nav-cta,
+	.pricing-header > .nav-cta,
+	.services-grid + div .nav-cta {
+		display: inline-block;
+		width: fit-content;
+		padding: 1rem 2rem;
+		font-family: 'Oswald', sans-serif;
+		font-size: .875rem;
+		font-weight: 600;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.offer-content > .nav-cta { margin: 1rem auto 0; }
 	.pricing-header { align-items: flex-start; }
-	.pricing-header > .nav-cta { align-self: center; width: fit-content; padding: 1rem 2rem; text-align: center; }
+	.pricing-header > .nav-cta { align-self: center; }
+	.services-grid + div { text-align: center; }
 	.cta-section { padding-top: 7rem; }
 	.cta-card { border-radius: 1.15rem; padding: 2.75rem 1.1rem 0; }
 	.cta-inner { padding-bottom: 2.5rem; }
