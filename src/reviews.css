@@ -1,0 +1,8 @@
+.reviews-main { background-color: var(--white); }
+.reviews-intro { max-width: 52rem; margin: 0 auto 3.5rem; text-align: center; }
+.reviews-intro h2 { margin: 1rem 0 1.25rem; color: var(--primary); font-family: var(--headerFont); font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1; text-transform: uppercase; }
+.reviews-intro p { color: var(--bodyTextColor); line-height: 1.75; }
+.reviews-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; max-width: 76rem; margin: 0 auto; }
+.reviews-grid .testimonial-card { height: 100%; box-sizing: border-box; }
+@media (min-width: 768px) { .reviews-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
