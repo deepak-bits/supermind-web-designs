@@ -1505,8 +1505,8 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 
 /* Final middle-breakpoint navbar inset; keep the outer navbar spacing unchanged. */
 @media (min-width: 1024px) and (max-width: 1399px) {
-	nav { padding-left: .75rem; padding-right: .75rem; }
-	nav.scrolled { padding-left: .75rem; padding-right: .75rem; }
+	nav { padding-left: 1rem !important; padding-right: 1rem !important; }
+	nav.scrolled { padding-left: 1rem !important; padding-right: 1rem !important; }
 }
 
 @media (max-width: 1023px) {
