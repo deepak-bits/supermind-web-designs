@@ -131,6 +131,27 @@ if (menuToggle && navLinks) {
 		const isOpen = navLinks.classList.toggle('is-open');
 		menuToggle.setAttribute('aria-expanded', String(isOpen));
 		menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+		if (!isOpen) navLinks.querySelectorAll('.nav-item.is-expanded').forEach(item => item.classList.remove('is-expanded'));
+	});
+	navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+		toggle.setAttribute('role', 'button');
+		toggle.setAttribute('tabindex', '0');
+		toggle.setAttribute('aria-expanded', 'false');
+		const toggleDropdown = () => {
+			const item = toggle.closest('.nav-item');
+			const isExpanded = item.classList.toggle('is-expanded');
+			navLinks.querySelectorAll('.nav-item.is-expanded').forEach(other => {
+				if (other !== item) other.classList.remove('is-expanded');
+			});
+			toggle.setAttribute('aria-expanded', String(isExpanded));
+		};
+		toggle.addEventListener('click', toggleDropdown);
+		toggle.addEventListener('keydown', event => {
+			if (event.key === 'Enter' || event.key === ' ') {
+				event.preventDefault();
+				toggleDropdown();
+			}
+		});
 	});
 }
 </script>
