@@ -1503,18 +1503,6 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	.service-page-grid article { padding: 1.5rem; }
 }
 
-/* Final middle-breakpoint navbar inset; keep the outer navbar spacing unchanged. */
-@media (min-width: 1024px) and (max-width: 1399px) {
-	nav { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
-	nav.scrolled { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
-}
-
-/* The hamburger layout can remain active on wider browser zoom viewports. */
-@media (min-width: 1400px) and (max-width: 1599px) {
-	nav { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
-	nav.scrolled { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
-}
-
 /* Tablet hamburger layout: inset the controls without changing the outer card. */
 @media (min-width: 768px) and (max-width: 1023px) {
 	nav { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
@@ -1528,21 +1516,6 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	.nav-links.is-open .nav-dropdown-menu::after { display: none; }
 	.nav-links.is-open .nav-dropdown-toggle svg { transform: rotate(0deg); }
 	.nav-links.is-open .nav-item.is-expanded .nav-dropdown-toggle svg { transform: rotate(180deg); }
-}
-
-/* Intermediate screens: keep the compact hamburger layout edge-aligned. */
-@media (min-width: 768px) and (max-width: 1399px) {
-	nav { padding-left: .5rem; padding-right: .5rem; }
-	nav.scrolled { padding-left: .5rem; padding-right: .5rem; }
-	.nav-container { width: 100%; max-width: none; padding-left: 0; padding-right: 0; }
-	.nav-actions { margin-left: auto; }
-}
-
-@media (min-width: 1024px) and (max-width: 1399px) {
-	nav { padding-left: .75rem; padding-right: .75rem; }
-	nav.scrolled { padding-left: .75rem; padding-right: .75rem; }
-	.nav-container { width: 100%; padding-left: 0; padding-right: 0; }
-	.nav-actions { margin-left: auto; }
 }
 
 /* Desktop: the established wide layout remains the visual baseline. */
