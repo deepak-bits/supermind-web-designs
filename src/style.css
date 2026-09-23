@@ -1087,7 +1087,8 @@ details[open] .faq-icon { transform: rotate(45deg); }
 	.services-grid + div .nav-cta {
 		display: inline-block;
 		width: fit-content;
-		padding: 1rem 2rem;
+		padding: 1rem 3rem;
+		border-radius: 3rem;
 		font-family: 'Oswald', sans-serif;
 		font-size: .875rem;
 		font-weight: 600;
