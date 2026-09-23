@@ -425,7 +425,7 @@ nav.scrolled {
 	aspect-ratio: 16 / 10;
 	border-radius: 0.7rem;
 	overflow: hidden;
-	background: #fff;
+	background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
 	position: relative;
 }
 .mac-screen img {
@@ -522,7 +522,7 @@ nav.scrolled {
     aspect-ratio: 9 / 17.5;
     border-radius: 0.9rem;
     overflow: hidden;
-	background: #fff;
+	background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
 	position: relative;
 }
 .iphone-screen::after {

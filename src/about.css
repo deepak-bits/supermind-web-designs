@@ -80,6 +80,7 @@
 .about-intro-image-wrap {
 	position: relative;
 	z-index: 8;
+	transform: translateY(1.5rem);
 }
 
 .about-intro-image {
@@ -211,6 +212,7 @@
 
 @media (max-width: 767px) {
 	.about-main { margin-top: 0; }
+	.about-intro-image-wrap { transform: translateY(1rem); }
 }
 
 /* VALUES */
