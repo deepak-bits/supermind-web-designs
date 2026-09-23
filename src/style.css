@@ -1330,7 +1330,7 @@ details[open] .faq-icon { transform: rotate(45deg); }
 }
 
 /* SHARED INTERNAL PAGE HERO */
-.internal-hero { background-color: var(--primary); background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.04) 1px, transparent 0); background-size: 40px 40px; padding: 10rem 0 20rem; position: relative; z-index: 2; overflow: hidden; }
+.internal-hero { background-color: var(--primary); background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.04) 1px, transparent 0); background-size: 40px 40px; padding: 10rem 0 20rem; position: relative; z-index: 20; overflow: hidden; }
 .internal-hero-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: relative; z-index: 2; padding: 2rem 0; transform: translateY(2rem); }
 .internal-hero h1 { margin: 0; color: var(--white); font-family: var(--headerFont); font-weight: 700; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1; letter-spacing: -0.02em; text-transform: uppercase; }
 .internal-hero-lowercase-s { text-transform: lowercase; }
@@ -1676,6 +1676,21 @@ html.dark-theme .service-story-image { background: linear-gradient(#0F172A,#0F17
 .locations-intro h2,
 .pricing-page-section .pricing-heading {
 	margin-top: var(--sectionTagGap);
+}
+
+/* Keep the shared hero wave above the following internal-page content. */
+.locations-main,
+.location-page-main,
+.blog-main,
+.blog-article,
+.legal-page,
+.not-found-page,
+.service-page,
+.pricing-page-section,
+.faq-main,
+.about-main,
+.contact-main {
+	z-index: 1;
 }
 
 /* Shared compact-page refinements */

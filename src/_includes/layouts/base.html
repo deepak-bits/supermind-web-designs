@@ -63,7 +63,7 @@
 </head>
 <body>
 {% include "partials/nav.html" %}
-{% set optimizedContent = content | replace('.png"', '.webp"') | replace('.jpg"', '.webp"') | replace('$175', '$125') | replace('$3800', '$2,000+') | replace('$8k', '$3.5k') | replace('$3,800', '$2,000+') | replace('$2,000+', '$2,000') | replace('href="#contact"', 'href="/contact/"') | replace('<img ', '<img loading="lazy" decoding="async" ') %}
+{% set optimizedContent = content | replace('.webp"', '.webp"') | replace('.jpg"', '.webp"') | replace('$175', '$125') | replace('$3800', '$2,000+') | replace('$8k', '$3.5k') | replace('$3,800', '$2,000+') | replace('$2,000+', '$2,000') | replace('href="#contact"', 'href="/contact/"') | replace('<img ', '<img loading="lazy" decoding="async" ') %}
 {% if page.url == "/blog/custom-website-vs-website-builder/" %}
 {% set articleContent = optimizedContent | replace('Custom website development gives you control', 'Our <a href="/services/web-design/">custom website development service</a> gives you control') | replace('technical SEO, performance', '<a href="/services/seo/">technical SEO</a>, performance') | replace('add services or locations', 'add services or <a href="/locations/">locations</a>') %}
 {{ articleContent | safe }}
