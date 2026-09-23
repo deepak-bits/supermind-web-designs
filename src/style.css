@@ -1509,6 +1509,12 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	nav.scrolled { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
 }
 
+/* The hamburger layout can remain active on wider browser zoom viewports. */
+@media (min-width: 1400px) and (max-width: 1599px) {
+	nav { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+	nav.scrolled { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+}
+
 @media (max-width: 1023px) {
 	.nav-links.is-open .nav-item:hover .nav-dropdown-menu { display: none; }
 	.nav-links.is-open .nav-item.is-expanded .nav-dropdown-menu { display: block; }
