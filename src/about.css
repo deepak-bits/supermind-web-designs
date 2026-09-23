@@ -210,6 +210,10 @@
 	}
 }
 
+@media (max-width: 767px) {
+	.about-main { margin-top: 0; }
+}
+
 /* VALUES */
 .about-values {
 	background-color: var(--borderColorLight);
