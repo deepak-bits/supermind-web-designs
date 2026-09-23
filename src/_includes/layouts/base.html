@@ -59,7 +59,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&family=Oswald:wght@600;700;800&display=swap" rel="stylesheet" />
-	{% if page.url == '/' %}<link rel="preload" as="image" href="/assets/images/hero_laptop.webp" fetchpriority="high" />{% endif %}
+	{% if page.url == '/' %}<link rel="preload" as="image" href="/assets/images/hero_laptop.webp" fetchpriority="high" media="(min-width: 768px)" /><link rel="preload" as="image" href="/assets/images/hero_mobile.webp" fetchpriority="high" media="(max-width: 767px)" />{% elif page.url == '/about/' %}<link rel="preload" as="image" href="/assets/images/founder-profile-enhanced.webp" fetchpriority="high" />{% endif %}
 	{% block pagehead %}{% endblock %}
 </head>
 <body>
