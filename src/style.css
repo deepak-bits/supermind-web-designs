@@ -1521,8 +1521,8 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 }
 
 @media (min-width: 1024px) and (max-width: 1399px) {
-	nav { padding-left: .5rem; padding-right: .5rem; }
-	nav.scrolled { padding-left: .5rem; padding-right: .5rem; }
+	nav { padding-left: .75rem; padding-right: .75rem; }
+	nav.scrolled { padding-left: .75rem; padding-right: .75rem; }
 	.nav-container { width: 100%; padding-left: 0; padding-right: 0; }
 	.nav-actions { margin-left: auto; }
 }
