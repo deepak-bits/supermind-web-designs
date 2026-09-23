@@ -19,4 +19,5 @@
 .service-page-grid article { padding: 2rem; border: 1px solid var(--borderColor); border-radius: 1.25rem; background: var(--borderColorLight); }
 .service-page-grid h3 { margin-bottom: 0.75rem; color: var(--primary); font-family: var(--headerFont); font-size: 1.5rem; text-transform: uppercase; }
 .service-page-grid p { color: var(--bodyTextColor); line-height: 1.7; }
-@media (min-width: 768px) { .service-story { grid-template-columns: 1fr 1fr; gap: 4rem; } .service-story--reverse .service-story-image { order: 2; } .service-page-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 768px) { .service-story { grid-template-columns: 1fr 1fr; gap: 4rem; } .service-story--reverse .service-story-image { order: 2; } .service-page-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .service-page-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

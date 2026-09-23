@@ -1197,7 +1197,8 @@ details[open] .faq-icon { transform: rotate(45deg); }
 .testimonial-card-author { margin-top: auto; }
 .testimonial-card-name { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase; color: var(--primary); margin-bottom: 0.2rem; }
 .testimonial-card-location { font-size: 1rem; color: var(--bodyTextColor); }
-@media (min-width: 768px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 768px) { .testimonials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .testimonials-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* PERFORMANCE */
 .performance-section { background-color: var(--primary); color: var(--white); }
@@ -1218,7 +1219,7 @@ details[open] .faq-icon { transform: rotate(45deg); }
 .performance-dashboard-image { overflow: hidden; padding: 0; background: transparent; border: 0; }
 .performance-dashboard-image img { display: block; width: 100%; height: auto; border-radius: 1.5rem; }
 .performance-score-card { padding: 2rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 1.5rem; background: rgba(255,255,255,0.06); }
-.performance-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.performance-metrics { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem; }
 .performance-metrics strong { display: block; color: var(--secondaryLight); font-family: var(--headerFont); font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1; }
 .performance-metrics span, .score-panel-label { display: block; margin-top: 0.5rem; color: rgba(255,255,255,0.7); font-size: 0.75rem; line-height: 1.3; }
 .performance-score-panel { padding: 1.5rem; border-radius: 1rem; background: var(--white); color: var(--primary); }
@@ -1227,6 +1228,8 @@ details[open] .faq-icon { transform: rotate(45deg); }
 .score-bars { display: grid; gap: 0.75rem; font-size: 0.75rem; font-weight: 700; }.score-bars span { display: grid; grid-template-columns: 1fr 3fr; align-items: center; gap: 0.75rem; }.score-bars i { display: block; height: 0.45rem; border-radius: 1rem; background: linear-gradient(to right, #22C55E, var(--secondary)); }
 .performance-comparison { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 8rem; position: relative; }.performance-comparison > div { padding: 2rem; border-radius: 1.25rem; border: 1px solid rgba(255,255,255,0.12); text-align: center; }.performance-comparison > div:first-child { background: var(--white); color: var(--primary); }.performance-comparison > div:last-child { background: var(--primaryLight); }.performance-comparison h3 { font-family: var(--headerFont); font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1.5rem; }.performance-comparison ul { list-style: none; display: grid; gap: 0.75rem; }.performance-comparison li { color: inherit; font-size: 0.95rem; }.performance-comparison li::before { content: '✓'; color: var(--secondaryLight); margin-right: 0.75rem; font-weight: 700; }
 @media (min-width: 768px) { .performance-layout { grid-template-columns: 0.9fr 1.1fr; }.performance-comparison { grid-template-columns: repeat(2, 1fr); gap: 7rem; }.performance-comparison::before { content: 'VS'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-8deg); width: 4.875rem; height: 4.875rem; display: grid; place-items: center; border-radius: 50%; background: var(--secondaryLight); color: var(--primary); font-family: var(--headerFont); font-size: 1.35rem; font-weight: 700; letter-spacing: 0.05em; box-shadow: 0 0.5rem 1rem rgba(15,23,42,0.2); z-index: 2; } }
+@media (min-width: 768px) { .performance-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .performance-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* PRICING */
 .pricing-section { background-color: var(--borderColorLight); }
@@ -1253,7 +1256,8 @@ details[open] .faq-icon { transform: rotate(45deg); }
 .pricing-btn:hover { background-color: var(--secondary); }
 .pricing-btn--featured { background-color: var(--secondary); }
 .pricing-btn--featured:hover { background-color: var(--secondaryDark); }
-@media (min-width: 768px) { .pricing-header { flex-direction: row; align-items: flex-end; justify-content: space-between; } .pricing-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 768px) { .pricing-header { flex-direction: row; align-items: flex-end; justify-content: space-between; } .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .pricing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* FAQ PREVIEW */
 .faq-preview-section { background-color: var(--white); position: relative; overflow: hidden; padding-bottom: 4rem; }
