@@ -629,16 +629,16 @@ nav.scrolled {
 }
 
 @media (max-width: 767px) {
-	.faq-rings { width: 6rem; height: 6rem; }
-	.faq-ring--large { width: 6rem; height: 6rem; }
-	.faq-ring--small { width: 5rem; height: 5rem; }
-	.faq-rings--right { right: -3.25rem; bottom: 2rem; }
+	.faq-rings { width: 3rem; height: 3rem; }
+	.faq-ring--large { width: 3rem; height: 3rem; }
+	.faq-ring--small { width: 2.5rem; height: 2.5rem; }
+	.faq-rings--right { right: -1.625rem; bottom: 1rem; }
 	.faq-preview-section::before,
-	.faq-preview-section::after { width: 6rem; height: 6rem; }
-	.faq-preview-section::before { left: -3.25rem; top: 3rem; }
-	.faq-preview-section::after { right: -3.25rem; bottom: 2rem; }
+	.faq-preview-section::after { width: 3rem; height: 3rem; }
+	.faq-preview-section::before { left: -1.625rem; top: 3rem; }
+	.faq-preview-section::after { right: -1.625rem; bottom: 1rem; }
 	.faq-preview-section > .max-w-7xl::before,
-	.faq-preview-section > .max-w-7xl::after { width: 5rem; height: 5rem; }
+	.faq-preview-section > .max-w-7xl::after { width: 2.5rem; height: 2.5rem; }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
