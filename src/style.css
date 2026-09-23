@@ -1512,6 +1512,14 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	.nav-links.is-open .nav-item.is-expanded .nav-dropdown-toggle svg { transform: rotate(180deg); }
 }
 
+/* Intermediate screens: keep the compact hamburger layout edge-aligned. */
+@media (min-width: 1024px) and (max-width: 1399px) {
+	nav { padding-left: .5rem; padding-right: .5rem; }
+	nav.scrolled { padding-left: .5rem; padding-right: .5rem; }
+	.nav-container { width: 100%; padding-left: 0; padding-right: 0; }
+	.nav-actions { margin-left: auto; }
+}
+
 /* Desktop: the established wide layout remains the visual baseline. */
 @media (min-width: 1024px) {
 	.max-w-7xl { padding-left: 1.5rem; padding-right: 1.5rem; }
