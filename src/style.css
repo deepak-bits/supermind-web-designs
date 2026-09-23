@@ -593,8 +593,8 @@ nav.scrolled {
 }
 
 @media (max-width: 767px) {
-	.hero { padding-bottom: 9rem; }
-	.hero-grid { gap: 1.5rem; padding-top: 8rem; }
+	.hero { padding-bottom: 8rem; }
+	.hero-grid { gap: 1.5rem; padding-top: 7.5rem; }
 	.hero .badge { margin-bottom: 1.25rem; }
 	.hero-visual { width: min(76vw, 24rem); margin-top: 3rem; }
 	.hero h1 { font-size: clamp(2.4rem, 11vw, 3.3rem); }
@@ -603,8 +603,12 @@ nav.scrolled {
 	.mac-badge { right: -.5rem; padding: .55rem .75rem; border-radius: .65rem; }
 	.mac-badge-dot { width: 1.8rem; height: 1.8rem; }
 	.iphone-scene { left: -1.25rem; bottom: -.75rem; }
-	.iphone-body { border-radius: .75rem; }
-	.iphone-screen { border-radius: .5rem; }
+	.mac-lid { border-radius: .9rem .9rem .25rem .25rem; }
+	.mac-screen { border-radius: .55rem; }
+	.mac-screen::after { border-radius: .55rem; }
+	.mac-base { height: 1.15rem; border-radius: 0 0 1.1rem 1.1rem; }
+	.iphone-body { border-radius: .65rem; }
+	.iphone-screen { border-radius: .45rem; }
 	.cs-wave { height: 220px; }
 }
 
