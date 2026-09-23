@@ -1526,16 +1526,6 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	.service-page-grid article { padding: 1.5rem; }
 }
 
-/* Shared FAQ ring partials: halve both rings on mobile only. */
-@media (max-width: 767px) {
-	.faq-rings { width: 3rem; height: 3rem; }
-	.faq-ring--large { width: 3rem; height: 3rem; }
-	.faq-ring--small { width: 2.5rem; height: 2.5rem; }
-	.faq-rings--right { right: -1.625rem; bottom: 1rem; }
-	.faq-rings--right .faq-ring--small { left: -.5rem; bottom: 1.75rem; }
-	.faq-rings--left .faq-ring--small { left: 1.5rem; top: 1.25rem; }
-}
-
 /* Tablet hamburger layout: inset the controls without changing the outer card. */
 @media (min-width: 768px) and (max-width: 1023px) {
 	nav { padding-left: 1rem !important; padding-right: 1rem !important; }
