@@ -1514,8 +1514,8 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 
 /* Intermediate screens: keep the compact hamburger layout edge-aligned. */
 @media (min-width: 768px) and (max-width: 1399px) {
-	nav { width: calc(100vw - 1rem); padding-left: .5rem; padding-right: .5rem; }
-	nav.scrolled { width: 100vw; padding-left: .5rem; padding-right: .5rem; }
+	nav { padding-left: .5rem; padding-right: .5rem; }
+	nav.scrolled { padding-left: .5rem; padding-right: .5rem; }
 	.nav-container { width: 100%; max-width: none; padding-left: 0; padding-right: 0; }
 	.nav-actions { margin-left: auto; }
 }
