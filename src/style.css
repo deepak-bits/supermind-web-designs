@@ -1429,6 +1429,13 @@ details[open] .faq-icon { transform: rotate(45deg); }
 	.internal-hero-wave svg { height: 220px; }
 }
 
+/* Touch devices must use the explicit toggle state; :hover can remain stuck after a tap. */
+@media (max-width: 1023px) {
+	.nav-links.is-open .nav-item:hover .nav-dropdown-menu { display: none; }
+	.nav-links.is-open .nav-item.is-expanded .nav-dropdown-menu { display: block; }
+	.nav-links.is-open .nav-dropdown-menu { position: relative; overflow: hidden; border-radius: 0 0 .75rem .75rem; }
+}
+
 /* CONSISTENT BELOW-HERO INTRO TYPOGRAPHY */
 .faq-intro,
 .blog-intro,
