@@ -1,0 +1,42 @@
+.legal-page { background: var(--white); margin-top: -8rem; padding-top: 8rem; position: relative; z-index: 10; }
+.legal-content { max-width: 58rem; margin: 0 auto; }
+.legal-intro { display: flex; flex-direction: column; align-items: center; gap: 2.5rem; margin-bottom: 4rem; text-align: center; }
+.legal-intro-copy { max-width: 52rem; }
+.legal-intro .section-tag { display: inline-block; margin-bottom: var(--sectionTagGap); }
+.legal-intro h2 { margin: 0 0 var(--sectionHeadingCopyGap); color: var(--primary); font-family: var(--headerFont); font-size: clamp(2.5rem, 5vw, 3.75rem); font-weight: 600; line-height: 1; letter-spacing: -.02em; text-transform: uppercase; }
+.legal-intro p { max-width: 52rem; margin: 0 auto; color: var(--bodyTextColor); font-size: 1rem; line-height: 1.7; }
+.legal-intro-image-frame { width: min(100%, 46rem); padding: 2rem; border-radius: 1.5rem; background: var(--secondary); box-shadow: 0 1.25rem 2.5rem rgba(15,23,42,.16); }
+.legal-intro-image { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 1rem; }
+.legal-content-section { padding-top: 3rem; border-top: 1px solid var(--borderColor); }
+.legal-content h2 { margin: 2.5rem 0 1rem; color: var(--primary); font-family: var(--headerFont); font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.05; text-transform: uppercase; }
+.legal-content .legal-intro h2 { margin: 0 0 var(--sectionHeadingCopyGap); font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 1; }
+.legal-content-section h2:first-child { margin-top: 0; }
+.legal-content p, .legal-content li { color: var(--bodyTextColorDark); font-size: 1rem; line-height: 1.8; }
+.legal-content ul { margin: 1rem 0 0 1.25rem; display: grid; gap: .6rem; }
+.legal-content a { color: var(--secondaryDark); text-decoration: underline; }
+.legal-updated { margin-bottom: 2rem; color: var(--bodyTextColorLight) !important; font-size: .9rem !important; }
+html.dark-theme .legal-page { background: #0B1120; }
+html.dark-theme .legal-intro h2 { color: var(--headerColor); }
+html.dark-theme .legal-intro-image-frame { background: var(--secondaryDark); box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,.3); }
+html.dark-theme .legal-content h2 { color: var(--headerColor); }
+.not-found-page { margin-top: -8rem; padding-top: 8rem; padding-bottom: 7rem; position: relative; z-index: 10; }
+.not-found-panel { max-width: 58rem; margin: 0 auto; padding: clamp(2rem, 5vw, 4rem); position: relative; z-index: 11; overflow: hidden; text-align: center; border: 1px solid var(--borderColor); border-radius: 2rem; background: var(--borderColorLight); }
+.not-found-code { display: inline-block; margin-bottom: 1rem; color: var(--secondary); font-family: var(--headerFont); font-size: clamp(3.5rem, 10vw, 7rem); line-height: .8; }
+.not-found-panel h2 { margin-bottom: 1rem; color: var(--primary); font-family: var(--headerFont); font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1; text-transform: uppercase; }
+.not-found-panel p { max-width: 38rem; margin: 0 auto 2rem; color: var(--bodyTextColor); font-size: 1rem; line-height: 1.75; }
+.not-found-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+.not-found-actions .nav-cta { width: 13rem; min-height: 3.25rem; padding: 1rem 1rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 3rem; font-family: var(--headerFont); font-size: .9rem; font-weight: 600; letter-spacing: .08em; text-align: center; white-space: nowrap; }
+html.dark-theme .not-found-panel { background: #111827; }
+html.dark-theme .not-found-panel h2 { color: var(--headerColor); }
+@media (max-width: 767px) {
+	.legal-page { margin-top: -5rem; padding-top: 5.5rem; padding-bottom: 5rem; }
+	.legal-intro { gap: 2rem; margin-bottom: 3rem; }
+	.legal-intro h2 { font-size: clamp(2.25rem, 12vw, 3.25rem); }
+	.legal-intro-image-frame { padding: 1rem; }
+	.legal-content-section { padding-top: 2rem; }
+	.legal-content h2 { margin-top: 2rem; }
+	.not-found-page { margin-top: -5rem; padding-top: 5.5rem; padding-bottom: 4rem; }
+	.not-found-panel { border-radius: 1.25rem; }
+	.not-found-actions { gap: .75rem; }
+	.not-found-actions .nav-cta { width: 100%; min-height: 3rem; }
+}

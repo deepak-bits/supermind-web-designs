@@ -1,0 +1,61 @@
+<nav id="main-nav">
+	<div class="max-w-7xl nav-container">
+		<a class="logo-group" href="/" aria-label="SuperMind Web Designs home">
+			<div class="logo-icon">
+				<svg style="width:1.5rem;height:1.5rem;fill:none;stroke:#fff;" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+			</div>
+			<div class="logo-text-group">
+				<span class="logo-text">SUPER<span>MIND</span></span>
+				<span class="logo-sub">WEB DESIGNS</span>
+			</div>
+		</a>
+		<div id="nav-links" class="nav-links">
+					<a href="/" class="{{ 'active' if page.url == '/' }}">Home</a>
+			<div class="nav-item">
+				<span class="nav-dropdown-toggle">About Us <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span>
+				<div class="nav-dropdown-menu">
+							<a href="/about/" class="{{ 'active' if page.url == '/about/' }}">About Us</a>
+							<a href="/faq/" class="{{ 'active' if page.url == '/faq/' }}">FAQ</a>
+							<a href="/#reviews">Reviews</a>
+				</div>
+			</div>
+			<div class="nav-item">
+				<span class="nav-dropdown-toggle">Services <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span>
+				<div class="nav-dropdown-menu">
+					<a href="/services/web-design/">Web Design</a>
+					<a href="/services/seo/">SEO</a>
+					<a href="/services/ecommerce/">Ecommerce</a>
+					<a href="/services/mobile-apps/">Mobile Apps</a>
+				</div>
+			</div>
+			<div class="nav-item">
+				<span class="nav-dropdown-toggle">Top Locations <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span>
+				<div class="nav-dropdown-menu">
+					<a href="/locations/">All Locations</a>
+					<a href="/locations/new-york/">New York</a>
+					<a href="/locations/los-angeles/">Los Angeles</a>
+					<a href="/locations/chicago/">Chicago</a>
+					<a href="/locations/london/">London</a>
+					<a href="/locations/manchester/">Manchester</a>
+					<a href="/locations/austin/">Austin</a>
+					<a href="/locations/denver/">Denver</a>
+					<a href="/locations/seattle/">Seattle</a>
+					<a href="/locations/birmingham/">Birmingham</a>
+					<a href="/locations/bristol/">Bristol</a>
+				</div>
+			</div>
+					<a href="/pricing/" class="{{ 'active' if page.url == '/pricing/' }}">Pricing</a>
+					<a href="/blog/">Blog</a>
+					<a href="/contact/">Contact</a>
+		</div>
+		<div class="nav-actions">
+					<a href="/contact/" class="nav-cta">Get Started</a>
+			<button class="nav-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+				<span></span><span></span><span></span>
+			</button>
+			<button class="nav-theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+			</button>
+		</div>
+	</div>
+</nav>

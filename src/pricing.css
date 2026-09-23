@@ -1,0 +1,47 @@
+/* PRICING PAGE HERO */
+.pricing-hero {
+	background-color: var(--primary);
+	background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.04) 1px, transparent 0);
+	background-size: 40px 40px;
+	padding: 10rem 0 20rem;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+.pricing-hero-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	padding: 2rem 0;
+	transform: translateY(2rem);
+}
+.pricing-hero-heading {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: clamp(2.5rem, 5vw, 4.5rem);
+	color: var(--white);
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: -0.02em;
+}
+.pricing-hero-wave { position: absolute; bottom: -2px; left: 0; width: 100%; line-height: 0; pointer-events: none; z-index: 5; }
+.pricing-hero-wave svg { display: block; width: 100%; height: 380px; }
+
+.pricing-page-section {
+	background-color: var(--white);
+	padding-top: 8rem !important;
+	margin-top: -8rem;
+	position: relative;
+	z-index: 10;
+}
+.pricing-page-section .pricing-header { display: block; margin-bottom: 4rem; text-align: center; }
+.pricing-page-section .pricing-header > div { max-width: 52rem; margin: 0 auto; }
+.pricing-page-section .pricing-heading { margin-top: .35rem; }
+.pricing-intro-desc { max-width: 52rem; margin: 1.5rem auto 0; color: var(--bodyTextColor); font-size: 1rem; line-height: 1.7; }
+.pricing-page-cta { display: block; width: fit-content; margin: 3rem auto 0; }
+.pricing-page-section .pricing-card:not(.pricing-card--featured) {
+	background-color: var(--borderColorLight);
+}

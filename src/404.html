@@ -1,0 +1,15 @@
+---
+layout: layouts/base.html
+title: Page Not Found | SuperMind Web Designs
+permalink: /404.html
+---
+
+{% block pagecss %}<link rel="stylesheet" href="/legal.css" />{% endblock %}
+{% block pagehead %}<meta name="description" content="The page you requested could not be found. Explore SuperMind Web Designs for custom web design, SEO, ecommerce, and mobile app services." />{% endblock %}
+
+{% set internalHeroTitle = "Page Not Found" %}
+{% include "partials/internal-hero.html" %}
+
+<main class="legal-page not-found-page">
+	<div class="max-w-7xl"><div class="not-found-panel"><span class="not-found-code">404</span><span class="section-tag">Page Not Found</span><h2>That Page Took A Wrong Turn</h2><p>The page you are looking for may have moved, been renamed, or no longer exists. Explore our services, read the latest insights, or contact SuperMind Web Designs and we’ll help you find the right direction.</p><div class="not-found-actions"><a class="nav-cta" href="/">Back To Home</a><a class="nav-cta" href="/services/web-design/">Explore Web Design</a><a class="nav-cta" href="/contact/">Contact Us</a></div></div></div>
+</main>

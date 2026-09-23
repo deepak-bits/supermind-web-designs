@@ -1,0 +1,137 @@
+---
+layout: layouts/base.html
+title: Contact | SuperMind Web Designs — Let's Build Something
+permalink: /contact/
+---
+
+{% block pagecss %}<link rel="stylesheet" href="/contact.css" />{% endblock %}
+{% block pagehead %}
+<meta name="description" content="Get in touch with SuperMind Web Designs. No sales pitch, no account managers — talk directly to the developer building your site." />
+{% endblock %}
+
+{% set internalHeroTitle = "Contact Us" %}
+{% include "partials/internal-hero.html" %}
+<section class="contact-main section-padding">
+	<div class="max-w-7xl contact-grid">
+
+		<!-- LEFT: info -->
+		<div class="contact-info">
+			<div class="contact-info-block">
+				<span class="section-tag">Contact Us</span>
+				<h2 class="contact-info-heading section-heading">Get in touch</h2>
+				<p class="contact-info-desc">We take on a limited number of new clients each month so every project gets the attention it deserves. Fill out the form and we'll get back to you within 2 hours on weekdays.</p>
+			</div>
+
+			<div class="contact-channels">
+				<a href="tel:+919801913391" class="contact-channel">
+					<div class="contact-channel-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 .02h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+					</div>
+					<div class="contact-channel-text">
+						<span class="contact-channel-label">Phone</span>
+						<strong class="contact-channel-value">+91-9801913391</strong>
+					</div>
+					<svg class="contact-channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+				</a>
+
+				<a href="mailto:dkazbd@gmail.com" class="contact-channel">
+					<div class="contact-channel-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+					</div>
+					<div class="contact-channel-text">
+						<span class="contact-channel-label">Email</span>
+						<strong class="contact-channel-value">dkazbd@gmail.com</strong>
+					</div>
+					<svg class="contact-channel-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+				</a>
+
+				<div class="contact-channel contact-channel--static">
+					<div class="contact-channel-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+					</div>
+					<div class="contact-channel-text">
+						<span class="contact-channel-label">Areas Served</span>
+						<strong class="contact-channel-value">USA &amp; Canada</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- RIGHT: form card -->
+		<div class="contact-form-wrap">
+			<div class="contact-form-header">
+				<h3 class="contact-form-heading section-heading">Make an appointment</h3>
+			</div>
+
+			<form class="contact-form" id="contact-form" name="contact" method="POST" action="/contact/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+				<input type="hidden" name="form-name" value="contact" />
+				<div class="contact-field" hidden>
+					<label for="bot-field">Don’t fill this out if you’re human: <input id="bot-field" name="bot-field" tabindex="-1" autocomplete="off" /></label>
+				</div>
+				<div class="contact-field">
+					<label class="contact-label" for="cf-name">Full Name</label>
+					<input class="contact-input" type="text" id="cf-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+				</div>
+
+				<div class="contact-field">
+					<label class="contact-label" for="cf-email">Email Address</label>
+					<input class="contact-input" type="email" id="cf-email" name="email" placeholder="jane@acme.com" autocomplete="email" required />
+				</div>
+
+				<div class="contact-field">
+					<label class="contact-label" for="cf-phone">Phone Number</label>
+					<input class="contact-input" type="tel" id="cf-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+				</div>
+
+				<div class="contact-field">
+					<label class="contact-label" for="cf-message">Message</label>
+					<textarea class="contact-input contact-textarea" id="cf-message" name="message" rows="5" placeholder="What does your business do? Do you have an existing site? What's most important to you in a new website?"></textarea>
+				</div>
+
+				<div data-netlify-recaptcha="true"></div>
+
+				<button class="contact-submit" type="submit">
+					<span>Send Message</span>
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+				</button>
+
+				<p class="contact-form-note">We typically respond within 2 hours. No spam, ever.</p>
+			</form>
+
+			<!-- Success state -->
+			<div class="contact-success" id="contact-success" style="display:none;">
+				<div class="contact-success-icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+				</div>
+				<h3 class="contact-success-heading">Message Received</h3>
+				<p class="contact-success-desc">Thanks for reaching out. We'll be in touch within 2 hours on weekdays. Check your inbox — and your spam folder just in case.</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{% block pagescripts %}
+<script>
+document.getElementById('contact-form').addEventListener('submit', async (event) => {
+	event.preventDefault();
+	const form = event.currentTarget;
+	const submit = form.querySelector('.contact-submit');
+	submit.disabled = true;
+
+	try {
+		const response = await fetch(form.action, {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(new FormData(form)).toString()
+		});
+		if (!response.ok) throw new Error('Form submission failed');
+		form.style.display = 'none';
+		document.getElementById('contact-success').style.display = 'flex';
+	} catch (error) {
+		submit.disabled = false;
+		window.location.href = '/contact/?form-error=true';
+	}
+});
+</script>
+{% endblock %}

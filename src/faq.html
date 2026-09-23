@@ -1,0 +1,103 @@
+---
+layout: layouts/base.html
+title: FAQ | SuperMind Web Designs — Web Design Questions Answered
+permalink: /faq/
+---
+
+{% block pagecss %}<link rel="stylesheet" href="/faq.css" />{% endblock %}
+{% block pagehead %}
+<meta name="description" content="Get answers about SuperMind's hand-coded web design services — pricing, process, SEO, support and more. No fluff, just straight answers." />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does web design cost?","acceptedAnswer":{"@type":"Answer","text":"We offer $175/month with no upfront cost, or $3,800 one-time for a 5-page custom-coded website."}},{"@type":"Question","name":"Do you use WordPress?","acceptedAnswer":{"@type":"Answer","text":"We prefer custom-coded solutions for faster loading, better security, and complete control."}},{"@type":"Question","name":"How fast will my website load?","acceptedAnswer":{"@type":"Answer","text":"Our sites consistently achieve sub-1-second loading times and 99/100 Google PageSpeed scores."}}]}
+</script>
+{% endblock %}
+
+{% set internalHeroTitle = "FAQs" %}
+{% include "partials/internal-hero.html" %}
+
+{% block pagescripts %}
+<script>
+const tabs = document.querySelectorAll('.faq-tab');
+const panels = document.querySelectorAll('.faq-panel');
+tabs.forEach(tab => {
+	tab.addEventListener('click', () => {
+		tabs.forEach(t => t.classList.remove('active'));
+		panels.forEach(p => p.classList.remove('active'));
+		tab.classList.add('active');
+		document.querySelector(`.faq-panel[data-cat="${tab.dataset.cat}"]`).classList.add('active');
+	});
+});
+</script>
+{% endblock %}
+
+<section class="faq-main section-padding">
+	<div class="max-w-7xl">
+		<div class="faq-intro">
+			<span class="section-tag">Common Questions About Web Design</span>
+			<h2 class="faq-intro-heading">Everything You Want To Know. Answered.</h2>
+			<p class="faq-intro-desc">No sales pitch. No runaround. Just straight answers about how we work, what we charge, and why hand-coded beats WordPress every time.</p>
+			<div class="faq-hero-stats">
+				<div class="faq-hero-stat"><strong>20+</strong><span>Questions Answered</span></div>
+				<div class="faq-hero-stat-divider"></div>
+				<div class="faq-hero-stat"><strong>4</strong><span>Categories</span></div>
+				<div class="faq-hero-stat-divider"></div>
+				<div class="faq-hero-stat"><strong>100%</strong><span>Transparent</span></div>
+			</div>
+		</div>
+		<div class="faq-tabs" role="tablist">
+			<button class="faq-tab active" data-cat="pricing" role="tab">Pricing &amp; Services</button>
+			<button class="faq-tab" data-cat="process" role="tab">Development Process</button>
+			<button class="faq-tab" data-cat="support" role="tab">Support &amp; Maintenance</button>
+			<button class="faq-tab" data-cat="seo" role="tab">Performance &amp; SEO</button>
+		</div>
+
+		<div class="faq-panel active" data-cat="pricing">
+			<details class="faq-item"><summary>How much does web design cost? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">We offer two flexible options: <strong>$175/month</strong> with no upfront cost, unlimited edits and full support — or a <strong>$3,800 one-time payment</strong> for a 5-page custom-coded website. Both include hosting, maintenance, and ongoing optimization. No hidden fees, ever.</div></details>
+			<details class="faq-item"><summary>What's included in monthly plans? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Monthly plans include custom web development, unlimited content updates, hosting, 24/7 support, Google Business Profile setup, and professional email integration. Think of it as having a full development team on retainer for less than the cost of a part-time hire.</div></details>
+			<details class="faq-item"><summary>What makes your services different? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Unlike template solutions, our custom web design approach delivers faster loading times, higher Google rankings, and complete control over functionality. You get direct access to your developer — not an account manager reading from a script. Every line of code is written specifically for your business.</div></details>
+			<details class="faq-item"><summary>Do you use WordPress or website builders? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">We can work with WordPress if specifically requested, but we strongly prefer custom-coded solutions. Template platforms ship with thousands of lines of unnecessary code that slow your site, create security vulnerabilities, and break during updates. Our hand-coded approach means faster loading, better security, and complete control over every pixel.</div></details>
+			<details class="faq-item"><summary>Can I cancel my monthly subscription? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Monthly plans require a 12-month minimum commitment — this covers our initial build investment. After 12 months, you can cancel with 30 days' notice or buy out your website outright. If you stay 24 months, you take the code with you for free.</div></details>
+			<details class="faq-item"><summary>What happens if I miss a payment? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">We understand businesses face cash flow challenges. Our goal is a strong long-term partnership, so we work flexibly with clients experiencing temporary financial difficulties — just keep us informed. Sites may be suspended if we receive no communication or feel we are being taken advantage of.</div></details>
+		</div>
+
+		<div class="faq-panel" data-cat="process">
+			<details class="faq-item"><summary>What's your design timeline? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Our structured 4–6 week development process ensures efficient delivery while maintaining quality. Each project receives dedicated attention — no juggling 20 clients at once. We build in phases: discovery, design concept, development, review, and launch.</div></details>
+			<details class="faq-item"><summary>Do I own my website? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">For one-time builds, you receive a perpetual usage license upon final payment — full rights to use, modify, and host your website wherever you choose. Monthly subscribers can buy out their website after 12 months. Both options include full content management access.</div></details>
+			<details class="faq-item"><summary>What is a perpetual usage license? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">A perpetual usage license grants you permanent rights to use and maintain your website. You can modify content, change structure, and transfer to different hosting. The intellectual property rights to the underlying code remain with us — but you have everything needed to run your business effectively.</div></details>
+			<details class="faq-item"><summary>What's the website buyout structure? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">After 12 months on the Monthly Plan ($175/month), the buyout price brings your total to the equivalent of a one-time build. After 24 months of payments, you take the full codebase with you at no extra charge.</div></details>
+			<details class="faq-item"><summary>Do you offer refunds? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">We offer full refunds before development begins if we determine we're not the right fit or cannot deliver a design you love. Once development starts, we ensure satisfaction through unlimited revisions — but refunds are not available after development begins.</div></details>
+		</div>
+
+		<div class="faq-panel" data-cat="support">
+			<details class="faq-item"><summary>How do you ensure website security? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Every website includes SSL certification, daily backups, malware monitoring, and continuous security updates. Because our sites are static hand-coded HTML/CSS, there are no plugins to exploit, no CMS vulnerabilities, and no attack surface for the most common WordPress hacks.</div></details>
+			<details class="faq-item"><summary>Do you offer website maintenance? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Yes — maintenance is included in all monthly plans. For one-time builds, ongoing maintenance is available as an add-on. Our team handles security, content changes, performance optimization, and technical support. You never need to touch the code yourself.</div></details>
+			<details class="faq-item"><summary>What happens if I stop monthly service? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">If you cancel after the 12-month minimum without buying out your website, you'll need to transition to a new platform. We provide a 30-day transition period and assist with content migration. If you've been with us 24+ months, the code is yours to take anywhere.</div></details>
+			<details class="faq-item"><summary>Do you handle website emergencies? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Yes. All plans include priority support for technical emergencies. Monthly subscribers get 24/7 access to our team for urgent issues like downtime or security concerns. You speak directly to the developer — not a support ticket queue.</div></details>
+			<details class="faq-item"><summary>Can I make my own content updates? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Monthly plan clients get unlimited edits handled by our team — just email us what you need and it's done, typically within 24 hours. For clients who want direct CMS access, we can configure a lightweight admin panel on a case-by-case basis.</div></details>
+		</div>
+
+		<div class="faq-panel" data-cat="seo">
+			<details class="faq-item"><summary>How do you help businesses rank on Google? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Every website includes comprehensive on-page SEO — proper header structure, meta descriptions, schema markup, local business optimization, Google Business Profile setup, and area-specific content targeting. SEO isn't an afterthought; it's built into every line of code from day one.</div></details>
+			<details class="faq-item"><summary>Will my website work on mobile? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">All our websites are built mobile-first — meaning we design for small screens first, then scale up. We test extensively on phones, tablets, and desktops across iOS and Android. Over 60% of local search traffic is mobile, so this isn't optional for us.</div></details>
+			<details class="faq-item"><summary>How fast will my website load? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Our custom-coded websites consistently achieve <strong>sub-1-second loading times</strong> and 99/100 Google PageSpeed scores. WordPress sites typically score 40–60. Speed is a confirmed Google ranking factor — your competitors' slow sites are your opportunity.</div></details>
+			<details class="faq-item"><summary>Is SEO or advertising included? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Our packages include technical SEO fundamentals and local optimization. For advanced ongoing SEO campaigns or paid advertising, we partner with vetted SEO professionals and can provide referrals based on your market and goals.</div></details>
+			<details class="faq-item"><summary>Can you guarantee front-page Google rankings? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">No honest agency can guarantee specific rankings — Google's algorithm considers hundreds of factors. What we guarantee: a technically perfect foundation that gives you the best possible chance to rank. Our clients consistently see significant organic traffic improvements within 90 days.</div></details>
+			<details class="faq-item"><summary>What kind of SEO work is included? <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg></span></summary><div class="faq-body">Included in every build: semantic HTML structure, optimized meta titles and descriptions, Open Graph tags, local business schema markup, image alt text, sitemap generation, robots.txt, Core Web Vitals optimization, and Google Business Profile setup.</div></details>
+		</div>
+	</div>
+</section>
+
+<section class="still-questions section-padding">
+	<div class="max-w-7xl">
+		<div class="still-questions-card">
+			<div class="still-questions-left">
+				<h2 class="still-questions-heading">Still Have Questions?</h2>
+				<p class="still-questions-desc">We believe in complete transparency about our web design process and pricing. If something isn't covered here, let's schedule a quick call — no pressure, no sales pitch. We'll walk through examples of similar projects and explain exactly what we'd build for you.</p>
+			</div>
+			<div class="still-questions-right">
+				<a href="mailto:dkazbd@gmail.com" class="still-questions-btn">Schedule a Free Call</a>
+				<p class="still-questions-note">Typically responds within 2 hours</p>
+			</div>
+		</div>
+	</div>
+</section>
