@@ -1515,6 +1515,12 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 	nav.scrolled { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
 }
 
+/* Tablet hamburger layout: inset the controls without changing the outer card. */
+@media (min-width: 768px) and (max-width: 1023px) {
+	nav { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+	nav.scrolled { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+}
+
 @media (max-width: 1023px) {
 	.nav-links.is-open .nav-item:hover .nav-dropdown-menu { display: none; }
 	.nav-links.is-open .nav-item.is-expanded .nav-dropdown-menu { display: block; }
