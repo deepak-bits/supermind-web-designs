@@ -598,7 +598,7 @@ nav.scrolled {
 	.hero .badge { margin-bottom: 1.25rem; }
 	.hero-visual { width: min(76vw, 24rem); margin-top: 3rem; }
 	.hero h1 { font-size: clamp(2.4rem, 11vw, 3.3rem); }
-	.hero-desc { font-size: .95rem; }
+	.hero-desc { font-size: .95rem; margin-bottom: 1.5rem; }
 	.btn-primary, .btn-secondary { padding: .95rem 1.35rem; font-size: .82rem; }
 	.mac-badge { right: -.5rem; padding: .55rem .75rem; border-radius: .65rem; }
 	.mac-badge-dot { width: 1.8rem; height: 1.8rem; }
