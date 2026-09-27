@@ -33,6 +33,13 @@ body {
 }
 p { font-weight: 500; }
 a { text-decoration: none; color: inherit; }
+a,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	-webkit-tap-highlight-color: transparent;
+}
 img { max-width: 100%; height: auto; }
 .max-w-7xl {
 	max-width: 83rem;
