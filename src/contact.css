@@ -198,6 +198,14 @@
 	transform: translateX(3px);
 }
 
+/* Give long contact values more room on smaller screens. */
+@media (max-width: 767px) {
+	.contact-channel {
+		gap: 1rem;
+		padding: 1.4rem 1rem 1.4rem 1.25rem;
+	}
+}
+
 /* ─── FORM CARD ─────────────────────────────────────────── */
 .contact-form-wrap {
 	background-color: var(--white);
