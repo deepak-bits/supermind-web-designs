@@ -24,7 +24,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { overflow-x: hidden; }
 body {
-	background-color: var(--bodyTextColorWhite);
+	background-color: var(--white);
 	color: var(--headerColor);
 	font-family: var(--bodyFont);
 	-webkit-font-smoothing: antialiased;
