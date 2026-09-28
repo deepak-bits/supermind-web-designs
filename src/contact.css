@@ -339,6 +339,15 @@
 	margin-top: -0.5rem;
 }
 
+/* Keep the mobile form heading and fields on the same wider content line. */
+@media (max-width: 767px) {
+	.contact-form-header,
+	.contact-form {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
 /* ─── SUCCESS ───────────────────────────────────────────── */
 .contact-success {
 	padding: 5rem 2.5rem;
