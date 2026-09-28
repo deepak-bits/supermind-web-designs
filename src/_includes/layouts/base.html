@@ -93,13 +93,6 @@
 	<div class="max-w-7xl">
 		{% if page.url == "/blog/custom-website-vs-website-builder/" %}{% set nextBlogUrl = "/blog/local-seo-small-business/" %}{% set nextBlogTitle = "Local SEO for Small Businesses" %}{% elif page.url == "/blog/local-seo-small-business/" %}{% set nextBlogUrl = "/blog/website-design-trust/" %}{% set nextBlogTitle = "Website Design for Trust" %}{% elif page.url == "/blog/website-design-trust/" %}{% set nextBlogUrl = "/blog/mobile-first-website-design/" %}{% set nextBlogTitle = "Mobile-First Website Design" %}{% elif page.url == "/blog/mobile-first-website-design/" %}{% set nextBlogUrl = "/blog/website-accessibility-small-business/" %}{% set nextBlogTitle = "Website Accessibility" %}{% elif page.url == "/blog/website-accessibility-small-business/" %}{% set nextBlogUrl = "/blog/website-speed-small-business-seo/" %}{% set nextBlogTitle = "Website Speed and SEO" %}{% else %}{% set nextBlogUrl = "/blog/custom-website-vs-website-builder/" %}{% set nextBlogTitle = "Custom Website vs Website Builder" %}{% endif %}
 		<a class="blog-next-button" href="{{ nextBlogUrl }}">Next article: {{ nextBlogTitle }} <span aria-hidden="true">→</span></a>
-		<nav class="blog-related-links" aria-label="Related resources">
-			<strong>Continue exploring:</strong>
-			<a href="/services/web-design/">Custom web design</a>
-			<a href="/services/seo/">Technical SEO</a>
-			<a href="/locations/">Web design locations</a>
-			<a href="/faq/">Web design FAQs</a>
-		</nav>
 	</div>
 </section>
 {% endif %}
