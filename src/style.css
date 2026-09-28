@@ -985,7 +985,7 @@ nav.scrolled {
 .offer-features { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2.5rem; }
 .offer-feature { display: flex; gap: 0.75rem; align-items: flex-start; }
 .offer-check { width: 1.75rem; height: 1.75rem; flex-shrink: 0; color: var(--secondary); margin-top: 0.15rem; }
-.offer-feature h4 { font-family: 'Oswald', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 1.25rem; color: var(--primary); margin-bottom: 0.35rem; }
+.offer-feature h3 { font-family: 'Oswald', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 1.25rem; color: var(--primary); margin-bottom: 0.35rem; }
 .offer-feature p { color: var(--bodyTextColor); font-size: 0.875rem; line-height: 1.6; grid-row: 2; grid-column: 2; }
 
 .personality-section { background-color: var(--bodyTextColorWhite); }
@@ -1849,4 +1849,20 @@ html.dark-theme .service-story-image { background: linear-gradient(#0F172A,#0F17
 	.service-story { gap: 1.5rem; margin-bottom: 3rem; }
 	.service-story-image { border-radius: 1.1rem; }
 	.service-page-grid article { padding: 1.5rem; }
+}
+/* Keyboard users can bypass repeated site navigation. */
+.skip-link {
+	position: absolute;
+	left: 1rem;
+	top: -4rem;
+	z-index: 1000;
+	padding: 0.75rem 1rem;
+	background: #111;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.skip-link:focus {
+	top: 1rem;
 }
