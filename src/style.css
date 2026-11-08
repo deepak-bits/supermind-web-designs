@@ -1616,7 +1616,7 @@ body .locations-intro p { max-width: 52rem; margin: 1.5rem auto 0; font-size: 1r
 }
 .faq-intro-desc { margin-bottom: 2rem !important; }
 
-.location-page-footer .pricing-btn { background: var(--white); color: var(--primary); }
+.location-page-footer .pricing-btn { background: var(--secondaryDark); color: var(--white); }
 .location-page-footer .pricing-btn:hover,
 .location-page-footer .pricing-btn:focus-visible { background: var(--secondary); color: var(--white); }
 .location-page-copy .nav-cta { background: var(--secondaryDark); color: var(--white); }
