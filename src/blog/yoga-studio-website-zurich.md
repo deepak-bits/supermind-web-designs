@@ -4,12 +4,16 @@ title: "Yoga Teacher & Studio Website Design in Zurich | SuperMind"
 description: "How Zurich yoga teachers, instructors and studios can rank locally, turn visitors into booked classes, and make their offer easy to understand."
 permalink: /blog/yoga-studio-website-zurich/
 templateEngineOverride: njk,md
+author: Deepak Kumar
+date: 2026-11-26
+socialImage: /assets/images/yoga-website-zurich-social.jpg
+socialImageAlt: "Students practising yoga in a bright Zurich studio with tall arched windows"
 ---
 
 {% block pagecss %}<link rel="stylesheet" href="/blog.css" /><link rel="stylesheet" href="/blog-article.css" />{% endblock %}
 {% set internalHeroTitle = "Blog" %}{% include "partials/internal-hero.html" %}
 
-<article class="blog-article section-padding"><div class="max-w-7xl"><header class="blog-article-header"><span class="section-tag">Local SEO</span><h1>Yoga Teacher &amp; Studio Website Design in Zurich: How to Stand Out Locally</h1><p class="blog-lead">A precise, easy-to-book website helps the right Zurich students choose your classes.</p></header><div class="blog-article-body">
+<article class="blog-article section-padding"><div class="max-w-7xl"><header class="blog-article-header"><span class="section-tag">Local SEO</span><h1>Yoga Teacher &amp; Studio Website Design in Zurich: How to Stand Out Locally</h1><p class="blog-lead">A precise, easy-to-book website helps the right Zurich students choose your classes.</p><p class="blog-article-byline">By Deepak Kumar · Published <time datetime="2026-11-26">November 26, 2026</time></p></header><div class="blog-article-body">
 
 **Short answer:** To stand out in Zurich, yoga studios, teachers and instructors need a fast mobile site, German content with English where it serves their audience, neighbourhood-level information and a bookable class or session journey.
 

@@ -4,12 +4,16 @@ title: "Yoga Teacher & Studio Website Design in Switzerland | SuperMind"
 description: "A practical guide for Swiss yoga teachers, instructors and studios: languages, booking, payment and local SEO."
 permalink: /blog/yoga-studio-website-switzerland/
 templateEngineOverride: njk,md
+author: Deepak Kumar
+date: 2026-11-26
+socialImage: /assets/images/yoga-website-switzerland-social.jpg
+socialImageAlt: "Yoga mat and laptop in an Alpine studio overlooking a Swiss mountain lake"
 ---
 
 {% block pagecss %}<link rel="stylesheet" href="/blog.css" /><link rel="stylesheet" href="/blog-article.css" />{% endblock %}
 {% set internalHeroTitle = "Blog" %}{% include "partials/internal-hero.html" %}
 
-<article class="blog-article section-padding"><div class="max-w-7xl"><header class="blog-article-header"><span class="section-tag">Yoga Website Design</span><h1>Yoga Teacher &amp; Studio Website Design in Switzerland: What You Actually Need</h1><p class="blog-lead">A useful yoga website makes it easy for Swiss students to find you, understand your offer and book with confidence.</p></header><div class="blog-article-body">
+<article class="blog-article section-padding"><div class="max-w-7xl"><header class="blog-article-header"><span class="section-tag">Yoga Website Design</span><h1>Yoga Teacher &amp; Studio Website Design in Switzerland: What You Actually Need</h1><p class="blog-lead">A useful yoga website makes it easy for Swiss students to find you, understand your offer and book with confidence.</p><p class="blog-article-byline">By Deepak Kumar · Published <time datetime="2026-11-26">November 26, 2026</time></p></header><div class="blog-article-body">
 
 **Short answer:** A good Swiss yoga website is fast on mobile, uses the languages your students speak, makes booking and payment straightforward, and gives search engines clear local information. That applies to yoga studios, freelance teachers and instructors alike.
 

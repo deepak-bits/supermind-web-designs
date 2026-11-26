@@ -4,12 +4,16 @@ title: "Yoga Teacher & Studio Website Design in Geneva | SuperMind"
 description: "How Geneva yoga teachers, instructors and studios can reach French- and English-speaking students with a fast, bilingual website and local SEO."
 permalink: /blog/yoga-studio-website-geneva/
 templateEngineOverride: njk,md
+author: Deepak Kumar
+date: 2026-11-26
+socialImage: /assets/images/yoga-website-geneva-social.jpg
+socialImageAlt: "Yoga practitioner in tree pose beside Lake Geneva with Alpine mountains beyond"
 ---
 
 {% block pagecss %}<link rel="stylesheet" href="/blog.css" /><link rel="stylesheet" href="/blog-article.css" />{% endblock %}
 {% set internalHeroTitle = "Blog" %}{% include "partials/internal-hero.html" %}
 
-<article class="blog-article section-padding"><div class="max-w-7xl"><header class="blog-article-header"><span class="section-tag">Bilingual Website Design</span><h1>Yoga Teacher &amp; Studio Website Design in Geneva: Bilingual, Bookable and Easy to Find</h1><p class="blog-lead">Meet Geneva students in French and English with a website that makes your classes and booking options clear.</p></header><div class="blog-article-body">
+<article class="blog-article section-padding"><div class="max-w-7xl"><header class="blog-article-header"><span class="section-tag">Bilingual Website Design</span><h1>Yoga Teacher &amp; Studio Website Design in Geneva: Bilingual, Bookable and Easy to Find</h1><p class="blog-lead">Meet Geneva students in French and English with a website that makes your classes and booking options clear.</p><p class="blog-article-byline">By Deepak Kumar · Published <time datetime="2026-11-26">November 26, 2026</time></p></header><div class="blog-article-body">
 
 **Short answer:** A Geneva yoga website should make booking simple, state its teaching languages and location clearly, and support both French- and English-speaking students. This matters for independent teachers as much as it does for studios.
 

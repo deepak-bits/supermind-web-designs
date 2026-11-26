@@ -1,5 +1,6 @@
 .blog-article{background:var(--white);margin-top:-8rem;position:relative;z-index:10;padding-top:6rem !important}.blog-article>.max-w-7xl{max-width:68rem;text-align:center}.blog-article h1{max-width:58rem;margin:0 auto;color:var(--primary);font-family:var(--headerFont);font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;text-transform:uppercase}.blog-lead{max-width:52rem;margin:1.5rem auto 0;color:var(--bodyTextColor);font-size:1rem;line-height:1.7}.blog-article-body{max-width:48rem;margin:4rem auto 0;text-align:left}.blog-article-body h2{margin:2.5rem 0 1rem;color:var(--primary);font-family:var(--headerFont);font-size:2rem;text-transform:uppercase}.blog-article-body p{color:var(--bodyTextColorDark);line-height:1.8}.blog-article-body a{color:var(--secondaryDark);text-decoration:underline}
 .blog-article-intro { font-size: 1rem; line-height: 1.8; }
+.blog-article-byline { margin: 1rem auto 0; color: var(--bodyTextColor); font-size: .9rem; }
 .blog-article-image { margin: 3rem auto; text-align: center; }
 .blog-article-image img { display: block; width: 100%; height: auto; border-radius: 1.25rem; box-shadow: 0 1.5rem 3rem rgba(15,23,42,.12); }
 .blog-article-image figcaption { margin-top: .75rem; color: var(--bodyTextColor); font-size: .85rem; line-height: 1.5; }

@@ -26,17 +26,18 @@
 	<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 	{% if description %}<meta name="description" content="{{ description }}" />{% endif %}
 	<link rel="canonical" href="https://supermindwebdesign.com{{ page.url }}" />
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="{% if socialImage %}article{% else %}website{% endif %}" />
 	<meta property="og:site_name" content="SuperMind Web Designs" />
 	<meta property="og:title" content="{{ title }}" />
 	<meta property="og:description" content="{{ description | default('SuperMind Web Designs creates fast, accessible, SEO-friendly websites and digital experiences for growing businesses.') }}" />
 	<meta property="og:url" content="https://supermindwebdesign.com{{ page.url }}" />
-	<meta property="og:image" content="https://supermindwebdesign.com/assets/images/hero_laptop.webp" />
-	<meta property="og:image:alt" content="Website preview on a MacBook" />
+	<meta property="og:image" content="https://supermindwebdesign.com{{ socialImage | default('/assets/images/hero_laptop.webp') }}" />
+	<meta property="og:image:alt" content="{{ socialImageAlt | default('Website preview on a MacBook') }}" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="{{ title }}" />
 	<meta name="twitter:description" content="{{ description | default('SuperMind Web Designs creates fast, accessible, SEO-friendly websites and digital experiences for growing businesses.') }}" />
-	<meta name="twitter:image" content="https://supermindwebdesign.com/assets/images/hero_laptop.webp" />
+	<meta name="twitter:image" content="https://supermindwebdesign.com{{ socialImage | default('/assets/images/hero_laptop.webp') }}" />
+	<meta name="twitter:image:alt" content="{{ socialImageAlt | default('Website preview on a MacBook') }}" />
 	<script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -59,6 +60,43 @@
 	  ]
 	}
 	</script>
+	{% if page.url == '/blog/yoga-studio-website-switzerland/' or page.url == '/blog/yoga-studio-website-zurich/' or page.url == '/blog/yoga-studio-website-geneva/' %}
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Article",
+	  "headline": "{{ title }}",
+	  "description": "{{ description }}",
+	  "datePublished": "2026-11-26",
+	  "dateModified": "2026-11-26",
+	  "author": { "@type": "Person", "name": "Deepak Kumar" },
+	  "publisher": { "@id": "https://supermindwebdesign.com/#organization" },
+	  "mainEntityOfPage": "https://supermindwebdesign.com{{ page.url }}",
+	  "image": "https://supermindwebdesign.com{{ socialImage }}"
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "FAQPage",
+	  "mainEntity": [
+	  {% if page.url == '/blog/yoga-studio-website-switzerland/' %}
+	    { "@type": "Question", "name": "Do I need a website as a freelance yoga teacher?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A concise site gives prospective students one dependable place to see your approach, availability, prices and booking options without relying on a social profile alone." } },
+	    { "@type": "Question", "name": "Can one website serve German, French and English visitors?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, provided each language version is complete, reviewed by a fluent speaker and easy to switch between." } },
+	    { "@type": "Question", "name": "Can I keep my current booking software?", "acceptedAnswer": { "@type": "Answer", "text": "Usually. A well-built site can link to or embed many booking tools while keeping the rest of the experience on your own domain." } }
+	  {% elif page.url == '/blog/yoga-studio-website-zurich/' %}
+	    { "@type": "Question", "name": "Is Google Business Profile or my website more important?", "acceptedAnswer": { "@type": "Answer", "text": "They work together. Your profile helps people discover you in Maps; your website gives them the detail and confidence to book." } },
+	    { "@type": "Question", "name": "Do I need a separate page for each class type?", "acceptedAnswer": { "@type": "Answer", "text": "For major offers such as Yin, Vinyasa, prenatal yoga or private teaching, a dedicated page can be helpful when it answers real questions about that class." } },
+	    { "@type": "Question", "name": "Do I need a website as a freelance yoga teacher?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It gives you a professional home for your teacher story, services, availability and booking links, even if your business is small." } }
+	  {% else %}
+	    { "@type": "Question", "name": "Should my main language be French or English?", "acceptedAnswer": { "@type": "Answer", "text": "Start with the language most of your students use, then make the other version complete rather than an afterthought." } },
+	    { "@type": "Question", "name": "Do I need two Google Business Profiles?", "acceptedAnswer": { "@type": "Answer", "text": "No. Use one accurate profile and make its services, details and website link clear for the people you serve." } },
+	    { "@type": "Question", "name": "Do I need a website as a freelance yoga teacher?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A small, well-organised website makes your personal offer easier to trust, share and book." } }
+	  {% endif %}
+	  ]
+	}
+	</script>
+	{% endif %}
 	<link rel="stylesheet" href="/style.css" />
 	{% block pagecss %}{% endblock %}
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
